@@ -1,0 +1,116 @@
+<html>
+<head>
+    <style>
+        /* Style for the container holding the three top images */
+        .top-images-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .corner-image {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 100px; /* Fixed width for the corner image */
+            height: auto; /* Maintains aspect ratio */
+        }
+        .center-image {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+            width: 30vw; /* Fixed width for the centered image */
+            height: auto; /* Maintains aspect ratio */
+        }
+        .left-top-image {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 20%; /* Fixed width for the left-top image */
+            height: auto; /* Maintains aspect ratio */
+        }
+        .button-container {
+            position: absolute;
+            bottom: 10px;
+            right: 10%;
+            bottom:10%;
+        }
+        .button {
+            background-color: #a0a3a1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(35, 227, 21);
+        }
+
+        .parent {
+            /* border: 1px solid red; */
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: end;
+        }
+
+        /* Style for the big image on the left */
+        .cart-container {
+            display: flex;
+            width: 100%;
+            height: 75%;
+            justify-content: center;
+        }
+
+        /* Style for the image on the left */
+        .cart-image {
+            width: 30%; /* Adjust the width as needed */
+            padding: 20px; /* Add padding for spacing */
+            padding-left: 60px; /* Add padding for spacing */
+        }
+
+        /* Style for the text on the right */
+        .cart-text {
+            width: 60%; /* Adjust the width as needed */
+            padding: 20px; /* Add padding for spacing */
+            /* justify-content: center;
+            display: flex; */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-images-container">
+        <img class="left-top-image" src="images\left image.jfif" alt="Image 1">
+        <img class="center-image" src="images\mental health.jpg" alt="Image 2">
+        <img class="corner-image" src="images\kare logo.jfif" alt="Image 3">
+    </div>
+    <div class="parent">
+        <div class="cart-container">
+            <img class="cart-image" src="images\3.left image.jpg" alt="Big Image">
+            <div class="cart-text">
+                <div>
+                    <h1 style="font-size: 40px;">To protect your mental health:</h1>
+                    <p style="font-size: 25px;"class=" mb-10">
+                        1. Prioritize self-care, including adequate sleep, exercise, and nutrition.
+                        <br>
+                        2. Maintain a support system of friends and family.
+                        <br>
+                        3. Manage stress through relaxation techniques like mindfulness or meditation.
+                        <br>
+                        4. Seek professional help when needed, without stigma.
+                        <br>
+                        5. Set realistic goals and boundaries to avoid overwhelm.
+                        <br>
+                        6. Monitor and address negative thought patterns.
+                        <br>
+                        7. Engage in activities you enjoy and find purpose in.
+                    </p>
+                    <div class="button-container">
+                        <a href="mental health.html"><button class="button">Click Me</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

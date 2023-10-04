@@ -1,0 +1,114 @@
+<html>
+<head>
+    <style>
+        /* Style for the container holding the three top images */
+        .top-images-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .corner-image {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 100px; /* Fixed width for the corner image */
+            height: auto; /* Maintains aspect ratio */
+        }
+        .center-image {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+            width: 30vw; /* Fixed width for the centered image */
+            height: auto; /* Maintains aspect ratio */
+        }
+        .left-top-image {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 20%; /* Fixed width for the left-top image */
+            height: auto; /* Maintains aspect ratio */
+        }
+        .button-container {
+            position: absolute;
+            bottom: 10px;
+            right: 10%;
+            bottom:10%;
+        }
+        .button {
+            background-color: #a0a3a1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(35, 227, 21);
+        }
+
+        .parent {
+            /* border: 1px solid red; */
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: end;
+        }
+
+        /* Style for the big image on the left */
+        .cart-container {
+            display: flex;
+            width: 100%;
+            height: 75%;
+            justify-content: center;
+        }
+
+        /* Style for the image on the left */
+        .cart-image {
+            width: 30%; /* Adjust the width as needed */
+            padding: 20px; /* Add padding for spacing */
+            padding-left: 60px; /* Add padding for spacing */
+        }
+
+        /* Style for the text on the right */
+        .cart-text {
+            width: 60%; /* Adjust the width as needed */
+            padding: 20px; /* Add padding for spacing */
+            /* justify-content: center;
+            display: flex; */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-images-container">
+        <img class="left-top-image" src="images\left image.jfif" alt="Image 1">
+        <img class="center-image" src="images\family dynamics.jpg" alt="Image 2">
+        <img class="corner-image" src="images\kare logo.jfif" alt="Image 3">
+    </div>
+    <div class="parent">
+        <div class="cart-container">
+            <img class="cart-image" src="images\2.left image.jpg" alt="Big Image">
+            <div class="cart-text">
+                <div>
+                    <h1 style="font-size: 40px;">To protect a child's well-being <br>within family dynamics:</h1>
+                    <p style="font-size: 25px;"class=" mb-10">
+                        1. Avoid exposure to parental conflicts and arguments.
+                        <br>
+                        2. Maintain consistent routines and stability.
+                        <br>                        
+                        3. Encourage open communication to address their concerns.
+                        <br>
+                        4. Provide a safe and nurturing environment.
+                        <br>
+                        5. Be attentive to their emotional needs and provide support.
+                        <br>
+                        6. Set positive examples of healthy relationships <br>and conflict resolution.
+                    </p>
+                    <div class="button-container">
+                        <a href="family.html"><button class="button">Click Me</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

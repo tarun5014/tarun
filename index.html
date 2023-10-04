@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('images/main image.jfif'); /* Replace with your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            position: relative;
+        }
+
+        .corner-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px; /* Fixed width for the corner image */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .center-image {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40vw; /* Fixed width for the centered image */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .center-image-container {
+            height:100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-container {
+            position: absolute;
+            bottom: 10px;
+            right: 10%;
+            bottom:10%;
+        }
+        .button {
+            background-color: #a0a3a1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(35, 227, 21);
+        }
+    </style>
+</head>
+<body>
+    <img class="corner-image" src="images\kare logo.jfif" alt="Image in the corner"> <!-- Replace with your corner image URL -->
+
+    <div class="center-image-container">
+        <img class="center-image" src="images\codeathon image.jfif" alt="Centered Image"> <!-- Replace with your centered image URL -->
+    </div>
+    <div class="button-container">
+        <a href="introduction.html"><button class="button">Click Me</button></a>
+    </div>
+</body>
+</html>

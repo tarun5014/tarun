@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Images Display</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .left-top-image {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 20%; /* Fixed width for the left-top image */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .right-top-image {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 100px; /* Fixed width for the right-top image */
+            height: auto; /* Maintains aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <img class="left-top-image" src="images\left image.jfif" alt="Left Image"> <!-- Replace with your left image URL -->
+    <img class="right-top-image" src="images\kare logo.jfif" alt="Right Image"> <!-- Replace with your right image URL -->
+</body>
+</html>
